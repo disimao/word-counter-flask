@@ -1,0 +1,16 @@
+<form method="get">
+    <label for="textbody">Text Body</label>
+    <br>
+    <textarea name="textbody"
+              placeholder="Enter a body of text"
+              rows="15"
+              cols="60"
+              type="text"
+              required 
+              oninvalid="this.setCustomValidity('some text input is required')"
+              oninput="this.setCustomValidity('')"
+              ></textarea>
+    <br>
+    <button type="submit">Submit</button>
+    {{message}}
+</form>
